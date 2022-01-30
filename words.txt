@@ -1,4 +1,10 @@
 appple
 bananna
 calculus
-bababoye
+calculator
+notebook
+communication
+programming
+elephant
+fox
+chocolate
