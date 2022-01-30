@@ -6,7 +6,7 @@
 #define MAX_WORDS 20
 
 void readfile(char* buffer){                                                    //this reads wrods from words file and store in buffer
-        FILE * fd=fopen("C:\\Users\\sudin\\Desktop\\hangman\\words.txt","r");                                        
+        FILE * fd=fopen("words.txt","r");                                        
 
         fseek(fd,0L,SEEK_END);													//this sets the file position indicator to the end of the file to read the size of file
         int filesize=ftell(fd);                                                 //this uptains the current value of file position and since it is in the end this gives us size of file
@@ -41,7 +41,7 @@ void my_print(char* arr,int i){
 }
 
 void game(char *w){
-	printf("%s\n",w);
+	//printf("%s\n",w);
 	int i=0,lives=5,gameState=0,u=0;
 	
 	for(;w[i]!='\0';i++){}                                     //counting our size of word and storing in i
