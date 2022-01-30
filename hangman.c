@@ -104,7 +104,7 @@ int main(){
 	srand(time(NULL));						          //wee need to set seed to create random number in c and we are using the time() ( which is always unique ) value as seed
 	char choice='y';
 	while(choice=='y'||choice=='Y'){
-		int r=rand()%(wordcount-1);				      //creating a random no... rand() creates a totally random no and to get it within our range we use % for example if we need random form 0 to 9 we use rand()%10
+		int r=rand()%(wordcount);				      //creating a random no... rand() creates a totally random no and to get it within our range we use % for example if we need random form 0 to 9 we use rand()%10
 		game(words[r]);
 		printf("play again?(y/n): ");
 		scanf(" %c",&choice);	
